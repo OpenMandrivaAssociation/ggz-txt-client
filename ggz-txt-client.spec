@@ -1,6 +1,6 @@
 %define name    ggz-txt-client
 %define version 0.0.14
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define libggz_version %{version}
 %define ggz_client_libs_version %{version}
@@ -15,7 +15,6 @@ License:	GPL
 Group:		Games/Other
 URL:		http://ggzgamingzone.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 Source0:	http://ftp.ggzgamingzone.org/pub/ggz/%{version}/%{name}-%{version}.tar.bz2
 Source1:	ggz-txt-client-README.mdk
 Patch0:		%{name}-0.0.7-readline.patch
@@ -23,7 +22,6 @@ BuildRequires:	libggz-devel = %{libggz_version}
 BuildRequires:	ggz-client-libs-devel = %{ggz_client_libs_version}
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
-BuildRequires:	automake1.7
 Requires:	libggz = %{libggz_version}
 Requires:	ggz-client-libs = %{ggz_client_libs_version}
 # (Abel) 0.0.9-1mdk don't need game modules, the only game module
@@ -43,7 +41,7 @@ It also includes the following text mode GGZ game(s):
 cp %{SOURCE1} README.mdk
 
 # needed by patch0
-AUTOMAKE=automake-1.7 ACLOCAL=aclocal-1.7 autoreconf --force --install
+autoreconf --force --install
 
 %build
 %configure2_5x --bindir=%{_gamesbindir} --with-libggz-libraries=%{_libdir} --with-ggzmod-libraries=%{_libdir} --with-ggzcore-libraries=%{_libdir}
