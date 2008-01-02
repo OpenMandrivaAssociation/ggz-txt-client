@@ -14,6 +14,7 @@ Release:	%{release}
 License:	GPL
 Group:		Games/Other
 URL:		http://ggzgamingzone.org/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:	http://ftp.ggzgamingzone.org/pub/ggz/%{version}/%{name}-%{version}.tar.bz2
 Source1:	ggz-txt-client-README.mdk
 Patch0:		%{name}-0.0.7-readline.patch
