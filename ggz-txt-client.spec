@@ -106,3 +106,64 @@ fi
 %{_datadir}/applications/*
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.14.1-6mdv2011.0
++ Revision: 618454
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.0.14.1-5mdv2010.0
++ Revision: 437674
+- rebuild
+
+* Sun Mar 15 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.0.14.1-4mdv2009.1
++ Revision: 355323
+- drop readline detection patch, uneeded anymore
+- rename README.mdk to README.mdv, and use herein document for it
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.0.14.1-3mdv2009.0
++ Revision: 246056
+- rebuild
+
+* Tue Feb 26 2008 Emmanuel Andry <eandry@mandriva.org> 0.0.14.1-1mdv2008.1
++ Revision: 175532
+- New version
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Jul 16 2007 Emmanuel Andry <eandry@mandriva.org> 0.0.14-2mdv2008.0
++ Revision: 52725
+- rebuild with latest autotools
+
+
+* Sat Feb 10 2007 Emmanuel Andry <eandry@mandriva.org> 0.0.14-1mdv2007.0
++ Revision: 118738
+- New version 0.0.14
+- bunzipped patch
+- Import ggz-txt-client
+
+* Sun Sep 03 2006 Emmanuel Andry <eandry@mandriva.org> 0.0.13-2mdv2007.0
+- fix spec file's extension
+- fix x86_64 build
+
+* Mon May 22 2006 Emmanuel Andry <eandry@mandriva.org> 0.0.13-1mdk
+- 0.0.13
+- mkrel
+- drop patch 1
+
+* Tue Feb 08 2005 Abel Cheung <deaddog@mandrake.org> 0.0.9-2mdk
+- rebuild against new readline
+
+* Sat Nov 27 2004 Abel Cheung <deaddog@mandrake.org> 0.0.9-1mdk
+- New version
+- P1: Temporary hack to fix DESTDIR support in older gettext
+- Now it includes a tictactoe game module (Doh)
+- Include README to tell people how to connect to server.
+  (fail to find any document about text client so far) But don't expect
+  too much, I can't input any text into the only one available game
+
