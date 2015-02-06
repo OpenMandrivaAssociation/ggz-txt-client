@@ -1,6 +1,6 @@
 %define name    ggz-txt-client
 %define version 0.0.14.1
-%define release %mkrel 6
+%define release 7
 
 %define libggz_version %{version}
 %define ggz_client_libs_version %{version}
