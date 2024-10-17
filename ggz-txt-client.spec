@@ -13,7 +13,7 @@ Release:	%{release}
 Summary:	GGZ Text Mode Client
 License:	GPL
 Group:		Games/Other
-URL:		http://ggzgamingzone.org/
+URL:		https://ggzgamingzone.org/
 Source0:	http://ftp.ggzgamingzone.org/pub/ggz/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	libggz-devel = %{libggz_version}
 BuildRequires:	ggz-client-libs-devel = %{ggz_client_libs_version}
